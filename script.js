@@ -17,7 +17,6 @@ const stringArr = ['apple', 'banana', 'cherry'];
 
 let longestString = '';
 function findLongestString(stringArr) {
-
 for (let i = 0; i < stringArr.length; i++) {
     if (stringArr[i].length > longestString.length) {
        longestString = stringArr[i];
@@ -31,7 +30,13 @@ console.log(findLongestString(stringArr));
 // For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"]
 
 function stringsLongerThan(arr, num) {
+    let result = []; // Array to store strings longer than 'num'
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i].length > num)
+        if (arr[i].length > num) {
+            result.push(arr[i]); // Add the string to the result array if it meets the condition
+        }
+    }
+    return result; // Return the array with matching strings
 }
-}
+
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
