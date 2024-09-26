@@ -36,7 +36,7 @@ function stringsLongerThan(arr, num) {
             result.push(arr[i]); // Add the string to the result array if it meets the condition
         }
     }
-    return result; // Return the array with matching strings
+    return result;
 }
 
 console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
@@ -49,7 +49,7 @@ function printNumbers(n) {
     }
 
     printNumbers(n - 1); // Recursively call the function with n-1
-    console.log(n); // Print the current number after the recursive call
+    console.log(n);
 }
 
-printNumbers(5); // Example usage
+printNumbers(5);
