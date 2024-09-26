@@ -6,6 +6,19 @@ const data = [
   { id: "7", name: "Bilbo", occupation: "None", age: "111" },
 ];
 
+// Function to ensure each object has an age and updated_at field (PART 3)
+
+const ensureFields = (person) => {
+    return {
+      ...person,
+      age: person.age ? Number(person.age) : 0, // Set age to 0 if it doesn't exist
+      updated_at: new Date() // Set updated_at to current date
+    };
+  };
+  
+  // Ensure all objects have the required fields
+  const updatedData = data.map(ensureFields);
+
 //Sort the array by age.
 
 //Convert the array from string to number
