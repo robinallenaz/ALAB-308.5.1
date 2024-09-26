@@ -40,3 +40,16 @@ function stringsLongerThan(arr, num) {
 }
 
 console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
+
+//Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+
+function printNumbers(n) {
+    if (n === 0) { // Base case: stop when n reaches 0
+        return;
+    }
+
+    printNumbers(n - 1); // Recursively call the function with n-1
+    console.log(n); // Print the current number after the recursive call
+}
+
+printNumbers(5); // Example usage
