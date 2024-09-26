@@ -25,3 +25,8 @@ const updatedData = data.map(person => ({
     age: String(Number(person.age) + 1)  // Increment age by 1 and keep it a string
 }));
 console.log("Data with occupation changed to 'job' and age incremented:", updatedData);
+
+//Calculate the total sum with "reduce"
+
+const totalAge = data.reduce((sum, person) => sum + Number(person.age), 0);
+console.log("Total sum of ages:", totalAge);
