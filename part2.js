@@ -11,3 +11,8 @@ const data = [
 //Convert the array from string to number
 const sortedByAge = data.sort((a, b) => Number(a.age) - Number(b.age));
 console.log("Sorted by age:", sortedByAge);
+
+//Filtering array to remove ages older than 50
+
+const filteredByAge = data.filter((person) => Number(person.age) <= 50);
+console.log("Filtered by age (<= 50):", filteredByAge);
