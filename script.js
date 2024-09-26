@@ -1,15 +1,15 @@
-// console.log('ALAB_308.5.1');
-// const arr = [1, 2, 3, 4, 5];
-// let sum = 0;
-// let average = 0;
-// function sumArray (arr) {
-//     for (i = 0; i<arr.length; i++) {
-//         sum += arr[i];
-//         average = sum / arr.length;
-//     }
-//     return sum;
-// }
-// console.log(sumArray(arr));
+console.log('ALAB_308.5.1');
+const arr = [1, 2, 3, 4, 5];
+let sum = 0;
+let average = 0;
+function sumArray (arr) {
+    for (i = 0; i<arr.length; i++) {
+        sum += arr[i];
+        average = sum / arr.length;
+    }
+    return sum;
+}
+console.log(sumArray(arr));
 
 //Taking array of strings and return longest string
 
