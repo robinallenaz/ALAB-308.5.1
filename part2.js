@@ -16,3 +16,12 @@ console.log("Sorted by age:", sortedByAge);
 
 const filteredByAge = data.filter((person) => Number(person.age) <= 50);
 console.log("Filtered by age (<= 50):", filteredByAge);
+
+//Map the array to change the “occupation” key to “job” and increment every age by 1
+
+const updatedData = data.map(person => ({
+    ...person,
+    job: person.occupation,  // Change 'occupation' to 'job'
+    age: String(Number(person.age) + 1)  // Increment age by 1 and keep it a string
+}));
+console.log("Data with occupation changed to 'job' and age incremented:", updatedData);
