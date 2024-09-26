@@ -30,3 +30,8 @@ console.log("Data with occupation changed to 'job' and age incremented:", update
 
 const totalAge = data.reduce((sum, person) => sum + Number(person.age), 0);
 console.log("Total sum of ages:", totalAge);
+
+//Calculate the average age
+
+const averageAge = totalAge / data.length;
+console.log("Average age:", averageAge);
